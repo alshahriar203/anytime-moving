@@ -5,8 +5,8 @@ import Footer from '../components/FooterFinal';
 
 // import cn from 'classnames';
 export const metadata = {
-  title: 'Code Machines Academy - Fun & Engaging Coding for Kids',
-  description: 'Code Machines is a growing academy and educational services provider for STEAM subjects in Halifax, Nova Scotia. Our mission is to equip kids with the tools they need to thrive in an evolving technological world through practical approaches',
+  title: 'Anytime Moving',
+  description: 'Your trusted moving company based in Halifax, Nova Scotia. We specialize in residential and commercial moves, ensuring a stress-free and seamless relocation experience with expert care and attention to detail.',
 //   icons: {
 //     icon: '/favicon.png', // Path to the favicon file
 //   },
