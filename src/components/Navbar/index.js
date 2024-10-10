@@ -1,0 +1,51 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import cn from 'classnames';
+
+import styles from './index.module.scss';
+
+function Navbar(props) {
+  return (
+    <section className={cn(styles.headerSection, props.className, 'navbar')}>
+      {/* Header section with navigation and contact information */}
+
+      <div className={styles.headerContent}>
+        <p className={styles.companyName}>Anytime Moving</p>
+
+        <nav className={styles.navigationMenu}>
+          {/* Main navigation menu */}
+
+          <div className={styles.navItem}>
+            <a className={styles.navLink} href="#process-section">Services</a>
+          </div>
+
+          <div className={styles.navItem1}>
+            <a className={styles.navLink} href="#whyus-section">Why Us</a>
+          </div>
+
+          <div className={styles.navItem2}>
+            <a className={styles.navLink} href="#review-section">Reviews</a>
+          </div>
+        </nav>
+
+        <div className={styles.contactInfo}>
+          <div className={styles.phoneContainer}>
+            <img className={styles.phoneIcon} src={'/assets/f7c4fa25fe51c7914b2b331ac8169f7f.svg'} alt="alt text" />
+            <p className={styles.phoneNumber}>(+880) 01730854112</p>
+          </div>
+
+          <button className={styles.quoteBtn}>
+            {/* TODO */}
+            Get  Quote
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+Navbar.propTypes = {
+  className: PropTypes.string
+};
+
+export default Navbar;
