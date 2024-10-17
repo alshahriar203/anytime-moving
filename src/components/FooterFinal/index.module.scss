@@ -4,7 +4,7 @@
 .movingCompanySection {
   display: flex;
   flex-direction: column;
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(255, 255, 255);
   width: 100%;
 }
 
@@ -14,7 +14,7 @@
   align-items: center;
   gap: 10px 0;
   margin: 30px auto 10px;
-  width: 92.15%;
+  width: 85%;
   max-width: 1338.9375px;
 
   @include tn {
@@ -27,55 +27,73 @@
   justify-content: space-between;
   gap: 0 10px;
   width: 100%;
+  align-content: center;
 
-  @include xl {
+  @include md {
     flex-direction: column;
     align-items: center;
     gap: 30px 10px;
   }
 }
 
+
 .companyInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px 0;
-  margin: 24px 0 0;
-  width: 232px;
+  gap: 20px 0;
   min-width: 0;
 
-  @include xl {
+  @include md {
+    width: 232px;
     margin: 0;
-    width: 100%;
-    min-width: unset;
+
   }
 }
 
-.companyName {
-  font: 400 31px/1.25 Jaro, Helvetica, Arial, serif;
-  color: rgb(90 124 246);
+.logo{
+  width: clamp(150px, 20vw, 268px);
+}
+
+.call{
+  display: flex;
+  flex-direction: row;
+  gap: 0 7px;
+  width: clamp(0px, 232px, 232px);
+}
+
+.phoneIcon {
+  width: 32px;
+  object-fit: cover;
+}
+
+.phoneNumber {
+  margin: 2px 0;
+  font: 900 23px/1.21 Inter, Helvetica, Arial, serif;
+  color: rgb(0, 0, 0);
 
   @include md {
     align-items: flex-start;
-    font-size: 28px;
-  }
-
-  @include xxs {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
 .contactBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0 5px;
-  width: 232px;
+  // width: 232px;
   max-width: 100%;
-  background-color: rgb(255 114 114);
+  background-color: rgb(135 189 251);
   border-radius: 27.5px;
   padding: 19.5px 29px;
-  outline: 2px solid rgb(28 36 75);
+  // outline: 2px solid rgb(28 36 75);
   outline-offset: -2px;
 }
 
@@ -85,7 +103,7 @@
   justify-content: center;
   align-items: center;
   min-width: 0;
-  font: 400 16px/1 Poppins, Helvetica, Arial, serif;
+  font: 700 20px/1 Poppins, Helvetica, Arial, serif;
   color: rgb(0 0 0);
   text-align: center;
   text-transform: capitalize;
@@ -99,11 +117,13 @@
 .descriptionContainer {
   display: flex;
   flex-direction: column;
-  margin: 23px 0 29px;
+  // align-items: center;
+  justify-content: center;
+  margin: 0 20px;
   width: 772px;
   min-width: 0;
 
-  @include xl {
+  @include md {
     margin: 0;
     width: 100%;
     min-width: unset;
@@ -112,7 +132,7 @@
 
 .companyDescription {
   font: 400 20px/1.6 Rubik, Helvetica, Arial, serif;
-  color: rgb(255 255 255);
+  color: rgb(0, 0, 0);
 
   @include md {
     align-items: flex-start;
@@ -127,11 +147,10 @@
 .navigationMenu {
   display: flex;
   flex-direction: column;
-  margin: 0 0 7px;
   width: 131px;
   min-width: 0;
 
-  @include xl {
+  @include md {
     margin: 0;
     width: 100%;
     min-width: unset;
@@ -140,7 +159,7 @@
 
 .menuTitle {
   font: 600 20px/1.39 Rubik, Helvetica, Arial, serif;
-  color: rgb(252 252 252);
+  color: rgb(49, 146, 250);
 
   @include md {
     align-items: flex-start;
@@ -152,42 +171,12 @@
   }
 }
 
-.menuItemWhyChooseUs {
-  margin: 15px 17px 0 0;
-  font: 400 16px/1.6 Rubik, Helvetica, Arial, serif;
-  color: rgb(255 255 255);
 
-  @include xs {
-    margin: 15px 16px 0 0;
-  }
-
-  @include tn {
-    margin: 15px 8px 0 0;
-  }
-}
-
-.menuItemOurServices {
-  margin: 10px 37px 0 0;
-  font: 400 16px/1.6 Rubik, Helvetica, Arial, serif;
-  color: rgb(255 255 255);
-
-  @include md {
-    margin: 10px 32px 0 0;
-  }
-
-  @include xs {
-    margin: 10px 16px 0 0;
-  }
-
-  @include tn {
-    margin: 10px 8px 0 0;
-  }
-}
-
-.menuItemCustomerReview {
+.menuItem{
   margin: 10px 0 0;
   font: 400 16px/1.6 Rubik, Helvetica, Arial, serif;
-  color: rgb(255 255 255);
+  color: rgb(49, 146, 250);
+  
 }
 
 .copyrightInfo {
@@ -195,6 +184,6 @@
   justify-content: center;
   align-items: center;
   font: 300 16px/1.5 Poppins, Helvetica, Arial, serif;
-  color: rgb(255 255 255);
+  color: rgb(0, 0, 0);
   text-align: center;
 }

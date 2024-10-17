@@ -193,3 +193,22 @@ code {
     display: flex;
     justify-content: center;
 }
+
+button{
+    &:hover{
+        background-color: white;
+        color: black
+    }
+}
+
+a{
+    text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    color: red;
+  }
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }

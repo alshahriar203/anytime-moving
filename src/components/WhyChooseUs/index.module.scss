@@ -4,7 +4,7 @@
 .whyChooseUsSection {
   display: flex;
   flex-direction: column;
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(255, 255, 255);
   width: 100%;
 }
 
@@ -12,21 +12,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0 10px;
+  gap: 0 50px;
   margin: 50px auto;
-  width: 88.94%;
+  width: 85%;
   // max-width: 1286.9609375px;
 
   @include lg {
     flex-direction: column;
-    gap: 30px 10px;
+    gap: 80px 0;
   }
 }
 
 .descriptionColumn {
   display: flex;
   flex-direction: column;
-  gap: 85px 0;
+  gap: 50px 0;
   width: 608px;
   min-width: 0;
 
@@ -48,15 +48,14 @@
   display: flex;
   flex-direction: column;
   width: 259px;
-  max-width: 85%;
 }
 
 .sectionTitle {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
   color: rgb(49, 146, 250);
-  text-align: center;
+  text-align: left;
   letter-spacing: -0.2px;
 
   @include md {
@@ -76,7 +75,7 @@
 
 .sectionDescription {
   font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
-  color: rgb(255 255 255);
+  color: rgb(0, 0, 0);
 
   @include md {
     align-items: flex-start;
@@ -123,7 +122,7 @@
 
 .featureText {
   font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
-  color: rgb(255 255 255);
+  color: rgb(0, 0, 0);
   letter-spacing: -0.1px;
 
   @include md {
@@ -138,7 +137,7 @@
 
 .featureText1 {
   font: 600 27px/1.22 Inter, Helvetica, Arial, serif;
-  color: rgb(255 255 255);
+  color: rgb(0, 0, 0);
 
   @include md {
     align-items: flex-start;

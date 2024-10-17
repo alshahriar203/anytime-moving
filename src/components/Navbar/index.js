@@ -10,7 +10,7 @@ function Navbar(props) {
       {/* Header section with navigation and contact information */}
 
       <div className={styles.headerContent}>
-        <p className={styles.companyName}>Anytime Moving</p>
+      <img className={styles.logo} src={'/assets/anytime-moving-logo.png'} alt="anytime moving logo" />
 
         <nav className={styles.navigationMenu}>
           {/* Main navigation menu */}
@@ -30,7 +30,7 @@ function Navbar(props) {
 
         <div className={styles.contactInfo}>
           <div className={styles.phoneContainer}>
-            <img className={styles.phoneIcon} src={'/assets/f7c4fa25fe51c7914b2b331ac8169f7f.svg'} alt="alt text" />
+            <img className={styles.phoneIcon} src={'/assets/black-phone.svg'} alt="phone" />
             <p className={styles.phoneNumber}>(+880) 01730854112</p>
           </div>
 

@@ -12,18 +12,21 @@ function FooterFinal(props) {
       <div className={styles.contentWrapper}>
         <div className={styles.mainContent}>
           <div className={styles.companyInfo}>
-            <p className={styles.companyName}>Anytime Moving</p>
-
-            <button className={styles.contactBtn}>
-              {/* TODO */}
-              <span className={styles.contactBtnText}>Call 902-943-8989</span>
-              <img
-                className={styles.contactBtnIcon}
-                src={'/assets/05f3f0b3f1d4d1d7203cf3d6f48d4958.svg'}
-                alt="alt text"
-              />
-            </button>
+            <img className={styles.logo} src={'/assets/anytime-moving-logo.png'} alt="anytime moving logo" />
+            <div className={styles.call}>
+                  <img
+                    className={styles.phoneIcon}
+                    src={'/assets/black-phone.svg'}
+                    alt="phone"
+                  />
+                  <p className={styles.phoneNumber}>902-943-8989</p>
+            </div>
+              
+            {/* <button className={styles.contactBtn}>
+                <span className={styles.contactBtnText}>Get Quote</span>
+            </button> */}
           </div>
+        
 
           <div className={styles.descriptionContainer}>
             <p className={styles.companyDescription}>
@@ -34,9 +37,9 @@ function FooterFinal(props) {
           <nav className={styles.navigationMenu}>
             {/* Navigation menu */}
             <p className={styles.menuTitle}>Menu</p>
-            <a className={styles.menuItemWhyChooseUs} href="#whyus-section">Why Choose Us</a>
-            <a className={styles.menuItemOurServices} href="#process-section">Our Services</a>
-            <a className={styles.menuItemCustomerReview} href="#review-section">Customer Review</a>
+            <a className={styles.menuItem} href="#whyus-section">Why Choose Us</a>
+            <a className={styles.menuItem} href="#process-section">Our Services</a>
+            <a className={styles.menuItem} href="#review-section">Customer Review</a>
           </nav>
         </div>
 

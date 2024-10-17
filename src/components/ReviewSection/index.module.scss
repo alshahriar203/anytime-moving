@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   width: 100%;
 }
 
@@ -22,7 +22,7 @@
   // width: 137.2265625px;
   max-width: 85%;
   font: 800 33px/1.21 Inter, Helvetica, Arial, serif;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-align: center;
 
   @include md {
@@ -37,13 +37,14 @@
 
 .reviewsContainer {
   display: flex;
-  justify-content: space-between;
-  gap: 0 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   margin: 85px auto 50px;
   width: 90.71%;
   max-width: 1318.015625px;
 
-  @include lg {
+  @include md {
     flex-direction: column;
     align-items: center;
     gap: 30px 10px;
@@ -61,14 +62,14 @@
 .reviewCard {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  min-width: 0;
-  background-color: rgb(255 255 255);
+  width: 386px;
+  // min-width: 0;
+  background-color: rgb(247, 247, 247);
   border-radius: 10px;
-  // box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  box-shadow: 4px 4px 4px 2px rgb(0 0 0 / 25%);
 
-  @include lg {
-    min-width: unset;
+  @include md {
+    width: clamp(350px, 80%, 500px);
   }
 }
 
